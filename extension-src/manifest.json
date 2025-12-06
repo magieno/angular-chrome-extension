@@ -1,20 +1,21 @@
 {
 "manifest_version": 3,
-  "name": "",
+  "name": "Angular Devtools",
   "description": "",
   "version": "1.0.0",
   "action": {
     "default_popup": "",
-    "default_icon": ""
+    "default_icon": "assets/images/icon.png"
   },
   "icons": {
-    "128": ""
   },
-  "commands": [],
   "permissions": [],
   "content_scripts": [],
   "trial_tokens": [],
-  "devtools_page": "",
-  "background": {},
+  "devtools_page": "devtools-loader.html",
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  },
   "web_accessible_resources": []
 }
